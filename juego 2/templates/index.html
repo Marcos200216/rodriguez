@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio - Juego de Caza Patos Matemáticos</title>
+    
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        /* Estilo del contenedor */
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo del botón */
+        #startGame {
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #startGame:hover {
+            background-color: #ffaa00;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Bienvenido al Juego de Caza Patos Matemáticos!</h1>
+        <p>En este juego, debes responder preguntas matemáticas y cazar los patos correctos con tu puntería.  
+        ¡Responde rápido y mejora tu puntuación!</p>
+        <p>Cuando estés listo, presiona el botón para comenzar.</p>
+        <button id="startGame">Empezar Juego</button>
+    </div>
+
+    <script>
+        document.getElementById("startGame").addEventListener("click", function() {
+            window.location.href = "index2.html"; // Redirige al juego principal
+        });
+    </script>
+</body>
+</html>
